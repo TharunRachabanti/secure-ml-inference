@@ -1,10 +1,10 @@
 """
 benchmarking.py — Full ε-grid search over the joint HE + DP noise pipeline.
 
-Runs 7 privacy budgets × 100 images each; writes results to
+Runs 9 privacy budgets × 100 images each; writes results to
 results/joint_noise_benchmark_results.csv.
 
-ε ∈ {0.1, 0.5, 1.0, 2.0, 5.0, 10.0, 50.0}
+ε ∈ {0.1, 0.5, 1.0, 2.0, 5.0, 10.0, 50.0, 160.0, 200.0}
 Fixed: δ=1e-5, σ_c=0.1, N=100, B=1.0
 """
 
@@ -45,7 +45,7 @@ GLOBAL_SCALE        = 2 ** 21
 SIGMA_C        = 0.1
 DELTA          = 1e-5
 INPUT_L2_BOUND = 1.0
-EPSILONS       = [0.1, 0.5, 1.0, 2.0, 5.0, 10.0, 50.0]
+EPSILONS       = [0.1, 0.5, 1.0, 2.0, 5.0, 10.0, 50.0, 160.0, 200.0]
 
 PLAINTEXT_ACC = 0.906
 HE_ONLY_ACC   = 0.85
